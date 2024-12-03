@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.spockframework</groupId>
+  <artifactId>spock-core</artifactId>
+  <version>2.2-groovy-3.0</version>
+  <name>Spock Framework - Core Module</name>
+  <description>Spock is a testing and specification framework for Java and Groovy applications.
+What makes it stand out from the crowd is its beautiful and highly expressive specification language.
+Thanks to its JUnit runner, Spock is compatible with most IDEs, build tools, and continuous integration servers.
+Spock is inspired from JUnit, jMock, RSpec, Groovy, Scala, Vulcans, and other fascinating life forms.</description>
+  <url>https://spockframework.org</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>pniederw</id>
+      <name>Peter Niederwieser</name>
+      <email>peter@pniederw.com</email>
+    </developer>
+    <developer>
+      <id>ldaley</id>
+      <name>Luke Daley</name>
+      <email>ld@ldaley.com</email>
+    </developer>
+    <developer>
+      <id>leonard84</id>
+      <name>Leonard Brünings</name>
+      <email>lord_damokles@gmx.net</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/spockframework/spock.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/spockframework/spock.git</developerConnection>
+    <url>https://github.spockframework.org/spock</url>
+  </scm>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>5.9.0</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.codehaus.groovy</groupId>
+      <artifactId>groovy</artifactId>
+      <version>3.0.12</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.platform</groupId>
+      <artifactId>junit-platform-engine</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest</artifactId>
+      <version>2.2</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

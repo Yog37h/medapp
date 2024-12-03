@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- External Storage Path -->
+    <external-path
+            name="shared_files"
+            path="Android/data/com.example.yourapp/files/"/>
+
+    <!-- Internal Files Path -->
+    <files-path
+            name="my_internal_files"
+            path="."/>
+</paths>
